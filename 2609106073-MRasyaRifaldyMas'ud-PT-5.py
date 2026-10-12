@@ -2,17 +2,14 @@ import os
 
 users = [
     ["rasya", "073", "admin"],
-    ["budi", "123", "user"]
+    ["smk", "123", "user"]
 ]
 
 antrean_servis = []
-
-# Perulangan utama program agar data antrean tetap tersimpan di memori saat logout
 while True:
     user_login = ""
     role_login = ""
 
-    # Menu Login / Register
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("==========================================")
@@ -71,7 +68,6 @@ while True:
             print("\n>> Pilihan tidak valid.")
             input("Tekan Enter untuk melanjutkan...")
 
-    # Menu Utama Aplikasi (Setelah Login)
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
         print("==========================================")
@@ -175,7 +171,7 @@ while True:
         elif pilihan_menu == "5":
             print("\n>> Berhasil Logout.")
             input("Tekan Enter untuk kembali ke halaman login...")
-            break  # Keluar dari menu utama ke menu login tanpa menghapus data antrean
+            break 
 
         elif pilihan_menu == "6":
             os.system('cls' if os.name == 'nt' else 'clear')
