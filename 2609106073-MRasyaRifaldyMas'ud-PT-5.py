@@ -7,7 +7,6 @@ users = [
 
 antrean_servis = []
 
-# Perulangan utama program agar data antrean tetap tersimpan di memori saat logout
 while True:
     user_login = ""
     role_login = ""
